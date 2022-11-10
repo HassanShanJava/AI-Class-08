@@ -17,12 +17,12 @@
     align-items: center;
     border: 2px solid black;
     width:700px;
-    margin: auto;
-    margin-top: 200px;
+    margin: 200px auto;
 }
 .inner-box{
     background:#fff;
     padding-bottom: 10px;
+    margin: auto  ;
 }
 
 .heading{
@@ -36,6 +36,7 @@ form,div,input,button,#output{
     margin-top: 20px;
     font-size: 1.2rem;
     text-align: center;
+
 }
 #output{
     text-align: center;
