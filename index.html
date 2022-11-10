@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Grade Checker</title>
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="heading">Grade Checker</h1>
+
+      <div class="inner-box">
+        <form onsubmit="checkgrade(); return false">
+          Enter your precentage: <input type="number" id="inputgrade" placeholder="Eg: 78%" required autofocus/>
+          <button>Check</button>
+        </form>
+        <h4 id="output"></h4>
+
+      </div>
+    </div>
+    <script>
+
+      function checkgrade(){
+          // let grade=parseInt(document.getElementById('inputgrade').value)
+
+          // youo can parse or add +before document
+          let grade= +document.getElementById('inputgrade').value
+
+          // document.getElementById('output').innerHTML=grade
+
+          
+          if(grade>100){
+            document.getElementById('output').innerHTML='Invalid grade'
+          }else if(grade>=80 && grade<=100){
+            document.getElementById('output').innerHTML='Your grade: A1'
+          }else if(grade>=70 && grade<=79){
+            document.getElementById('output').innerHTML='Your grade: A'
+          }else if(grade>=60 && grade<=69){
+            document.getElementById('output').innerHTML='Your grade: B'
+          }else if(grade>=50 && grade<=59){
+            document.getElementById('output').innerHTML='Your grade: C'
+          }else if(grade>=0 &&grade<=49) {
+            document.getElementById('output').innerHTML='Your grade: Fail'
+          }else{
+            document.getElementById('output').innerHTML='Grade cannot be negative (Invalid)'
+          
+          }
+          document.getElementById('inputgrade').value=''
+          
+
+      }
+
+
+    </script>
+  </body>
+</html>

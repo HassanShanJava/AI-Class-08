@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #e94a00 0%, #d5e70c 100%);
+    z-index: 1;
+    font-family: 'Raleway',sans-serif;
+
+}
+
+.box{
+    display: flex;
+    background:#fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width:700px;
+    margin: auto;
+    margin-top: 200px;
+}
+.inner-box{
+    background:#fff;
+    padding-bottom: 10px;
+}
+
+.heading{
+    background: #fff;
+    font-size: 2rem;
+    padding-top: 40px;
+}
+
+form,input,button,#output{
+    background:#fff;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    
+}
+#output{
+    text-align: center;
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;   
+}
+
+
+.box button{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.box button:hover{
+    color: #fff;    
+    background: linear-gradient(90deg, #e94a00 0%, #d5e70c 100%);
+    border:2px solid linear-gradient(90deg, #e94a00 0%, #d5e70c 100%) !important;
+}
+
