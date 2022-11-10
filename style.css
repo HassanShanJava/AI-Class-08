@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background: linear-gradient(90deg, #e94a00 0%, #d5e70c 100%);
+    background: linear-gradient(90deg, #13e900 0%, #510ce7 100%);
     z-index: 1;
     font-family: 'Raleway',sans-serif;
 
@@ -31,11 +31,11 @@
     padding-top: 40px;
 }
 
-form,input,button,#output{
+form,div,input,button,#output{
     background:#fff;
     margin-top: 20px;
     font-size: 1.2rem;
-    
+    text-align: center;
 }
 #output{
     text-align: center;
@@ -55,7 +55,7 @@ input{
 
 .box button:hover{
     color: #fff;    
-    background: linear-gradient(90deg, #e94a00 0%, #d5e70c 100%);
-    border:2px solid linear-gradient(90deg, #e94a00 0%, #d5e70c 100%) !important;
+    background: linear-gradient(90deg, #13e900 0%, #510ce7 100%);
+    background: linear-gradient(90deg, #13e900 0%, #510ce7 100%) !important;
 }
 
