@@ -46,10 +46,12 @@
           for(let i=0;i<limit;i++){
           output+=`${num} x ${i+1} = ${(i+1)*num} <br/>`
           }
+
+          document.getElementById('output').innerHTML=output
         }else{
-          document.getElementById('output').innerHTML=`Invalid, limit should be bigger than 0`          
+          document.getElementById('output').innerHTML='Invalid, limit should be bigger than 0'          
         }
-        document.getElementById('output').innerHTML=output
+
       }
     </script>
   </body>
